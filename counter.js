@@ -21,7 +21,7 @@ function aggiornaRisorsa(numero) {
   var suona = new Audio('campo.mp3');
   var x = document.getElementsByClassName("risorsa_sel");
   if (x.length > 0) {
-    if (x[0].innerHTML == "-") {
+    if (x[0].innerHTML == "-" || numero == "0") {
       k=0;
     }
     else {
