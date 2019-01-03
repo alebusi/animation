@@ -26,14 +26,13 @@
 }
 
 .tastiera {
-    width: 93vw;
-    margin: 2vh auto;
-    background-color: blue;
+    width: 112vh;
+    margin: 0vh auto;
 }
 
 .tasto {
     display: inline-block;
-    width: 20vw;
+    width: 23%;
     text-align: center;
     font-family: Arial, Sans-Serif;
     font-size: 12vh;
@@ -43,7 +42,45 @@
     background-color: white;
 }
 
-.tasto:hover {background-color: yellow;}
+.tasto:hover {
+  background-color: yellow;}
+
+#bianco:hover {
+  background-color: white;}
+
+#controllo {
+    width: 50%;
+    height: 10vh;
+    margin-left: 25%;
+    text-align: center;
+    font-family: Arial, Sans-Serif;
+    font-size: 12vh;
+    font-weight: bold;
+    letter-spacing: -2px;
+    padding-bottom: 2vh;
+    border: solid 1vh red;
+}
+
+.standard {
+    color: white;
+    background-color: white;
+ }
+
+.steccati {
+    width: 10vh;
+    height: 5vh;
+    border: solid 1vh red;
+    color: red;
+    background-color: red;
+}
+
+.edilizia {
+    width: 10vh;
+    height: 5vh;
+    border: solid 1vh red;
+    color: black;
+    background-color: black;
+}
 
 table {
    border-collapse: collapse;
@@ -138,38 +175,6 @@ table#t01 td {
     width: 20vh;
     height: 20vh;
     background-color: #00C200;
-}
-
-.standard {
-    float: right;
-    width: 10vh;
-    height: 5vh;
-    border: solid 1vh red;
-    margin-top: 4vh;
-    margin-right: 2vh;
-    margin-bottom: 6vh;
-}
-
-.steccati {
-    float: right;
-    width: 10vh;
-    height: 5vh;
-    border: solid 1vh red;
-    margin-top: 4vh;
-    margin-right: 2vh;
-    background-color: red;
-    margin-bottom: 6vh;
-}
-
-.edilizia {
-    float: right;
-    width: 10vh;
-    height: 5vh;
-    border: solid 1vh red;
-    margin-top: 4vh;
-    margin-right: 2vh;
-    background-color: black;
-    margin-bottom: 6vh;
 }
 
 .grano_3 {
