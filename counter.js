@@ -1,5 +1,6 @@
 var tess = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-/*var success = new Audio('success.wav');*/
+var aumenta = new Audio('success.wav');
+var togli = new Audio('togli.mp3');
 
 function selezionaRisorsa(div) {
   var suona = new Audio('campo.mp3');
@@ -18,7 +19,6 @@ function selezionaRisorsa(div) {
 }
 
 function aggiornaRisorsa(numero) {
-  var suona = new Audio('campo.mp3');
   var x = document.getElementsByClassName("risorsa_sel");
   if (x.length > 0) {
     if (x[0].innerHTML == "-" || numero == "0") {
@@ -34,7 +34,12 @@ function aggiornaRisorsa(numero) {
     else {
       x[0].innerHTML=k;
     }
-    suona.play();
+    if (numero > 0) {
+      aumenta.play();
+    }
+    else {
+      togli.play();
+    }
   }
 }
 
