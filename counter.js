@@ -1,6 +1,7 @@
 var tess = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var aumenta = new Audio('success.wav');
 var togli = new Audio('togli.mp3');
+var audio = document.createElement('audio');
 
 function selezionaRisorsa(div) {
   var suona = new Audio('campo.mp3');
@@ -36,10 +37,12 @@ function aggiornaRisorsa(numero) {
       x[0].innerHTML=k;
     }
     if (numero > 0) {
-      playAudio('success.wav');
+      audio.src = 'success.wav'
+      audio.play();
     }
     else {
-      playAudio('togli.mp3');
+      audio.src = 'togli.mp3'
+      audio.play();
     }
   }
 }
