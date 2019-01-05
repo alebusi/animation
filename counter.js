@@ -19,6 +19,7 @@ function selezionaRisorsa(div) {
 }
 
 function aggiornaRisorsa(numero) {
+  var audio = new Audio();
   var x = document.getElementsByClassName("risorsa_sel");
   if (x.length > 0) {
     if (x[0].innerHTML == "-" || numero == "0") {
@@ -35,12 +36,23 @@ function aggiornaRisorsa(numero) {
       x[0].innerHTML=k;
     }
     if (numero > 0) {
-      aumenta.play();
+      playAudio('success.wav');
     }
     else {
-      togli.play();
+      playAudio('togli.mp3');
     }
   }
+}
+
+function playAudio(url){
+  var audio = document.createElement('audio');
+  audio.src = url;
+  audio.style.display = "none"; //added to fix ios issue
+  audio.autoplay = false; //avoid the user has not interacted with your page issue
+  audio.onended = function(){
+    audio.remove(); //remove after playing to clean the Dom
+  };
+  document.body.appendChild(audio);
 }
 
 function aggRisorse(id,i,ind) {
