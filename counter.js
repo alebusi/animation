@@ -1,6 +1,4 @@
 var tess = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-var aumenta = new Audio('success.wav');
-var togli = new Audio('togli.mp3');
 var audio = document.createElement('audio');
 
 function selezionaRisorsa(div) {
