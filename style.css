@@ -31,7 +31,8 @@
 }
 
 .carte {
-    margin: 5vh auto;
+    margin-top: 5vh;
+    margin-left: 10vw;
 }
 
 .tasto {
