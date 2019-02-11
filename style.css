@@ -30,6 +30,10 @@
     margin: 0vh auto;
 }
 
+.carte {
+    margin: 5vh auto;
+}
+
 .tasto {
     display: inline-block;
     width: 23%;
