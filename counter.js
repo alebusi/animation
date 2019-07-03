@@ -1,8 +1,14 @@
 var tess = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-var audio = document.createElement('audio');
+var audioCampo = new Audio('campo.mp3');
+
+var audioTogliRisorsa = new Audio('togli.mp3');
+var audioAggiungiRisorsa = new Audio('success.wav');
+
+var audioPecora = new Audio('pecora.mp3');
+var audioCinghiale = new Audio('cinghiale.mp3');
+var audioBestiame = new Audio('bestiame.mp3');
 
 function selezionaRisorsa(div) {
-  var suona = new Audio('campo.mp3');
   var className = div.getAttribute("class");
   var x = document.getElementsByClassName("risorsa_sel");
   if (x.length > 0) {
@@ -14,11 +20,10 @@ function selezionaRisorsa(div) {
   else if (className == "risorsa_sel") {
        div.className = "risorsa";
        }
-  suona.play();
+  campoAudio.play();
 }
 
 function aggiornaRisorsa(numero) {
-  var audio = new Audio();
   var x = document.getElementsByClassName("risorsa_sel");
   if (x.length > 0) {
     if (x[0].innerHTML == "-" || numero == "0") {
@@ -28,35 +33,22 @@ function aggiornaRisorsa(numero) {
       k=parseInt(x[0].innerHTML);
     }
     k+=numero;
-    if (k == 0) {
+    if (k === 0) {
       x[0].innerHTML = "-";
     }
     else {
       x[0].innerHTML=k;
     }
     if (numero > 0) {
-      audio.src = 'success.wav'
-      audio.play();
+      audioAggiungiRisorsa.play();
     }
     else {
-      audio.src = 'togli.mp3'
-      audio.play();
+      audioTogliRisorsa.play();
     }
   }
 }
 
-function playAudio(url){
-  var audio = document.createElement('audio');
-  audio.src = url;
-  audio.style.display = "none"; //added to fix ios issue
-  audio.autoplay = false; //avoid the user has not interacted with your page issue
-  audio.onended = function(){
-    audio.remove(); //remove after playing to clean the Dom
-  };
-  document.body.appendChild(audio);
-}
-
-function aggRisorse(id,i,ind) {
+function OldaggRisorse(id,i,ind) {
   var x = document.getElementsByClassName("example");
   tess[ind]+=i;
   v=tess[ind];
@@ -89,63 +81,50 @@ function aggRisorse(id,i,ind) {
 
 function myfunc2(div) {
   var className = div.getAttribute("class");
-  var suona = new Audio('campo.mp3');
   if (document.getElementById("controllo").className=="standard") { 
     if (className=="spazio") {
       div.className = "campo";
-      suona.play();
       }
     else if (className=="campo") {
       div.className = "grano_3";
-      suona.play();
       }
     else if (className=="grano_3") {
       div.className = "grano_2";
-      suona.play();
       }
     else if (className=="grano_2") {
       div.className = "grano_1";
-            suona.play();
       }
     else if (className=="grano_1") {
       div.className = "ortaggio_2";
-            suona.play();
       }
     else if (className=="ortaggio_2") {
       div.className = "ortaggio_1";
-            suona.play();
       }
     else if (className=="ortaggio_1") {
       div.className = "spazio";
-      suona.play();
       }
   }
   else if (document.getElementById("controllo").className=="edilizia") {
     if (className=="spazio") {
       div.className = "stanza";
-      suona.play();
       }
     else if (className=="stanza") {
       div.className = "stalla";
-      suona.play();
       } 
     else if (className=="stalla") {
       div.className = "stanza_argilla";
-      suona.play();
       }
     else if (className=="stanza_argilla") {
       div.className = "stanza_pietra";
-      suona.play();
       }
     else if (className=="stanza_pietra") {
       div.className = "spazio";
-      suona.play();
       }
   }
+  audioCampo.play();
 }
 
 function mysel(div) {
-  var suona = new Audio('campo.mp3');
   var className = div.getAttribute("class");
   if (document.getElementById("controllo").className=="steccati") {
     if (className=="largo") {
@@ -154,12 +133,11 @@ function mysel(div) {
     else if (className=="largo_nero") {
        div.className = "largo";
        }
-    suona.play();
+    audioCampo.play();
     }
 }
 
 function mySwitch(div) {
-  var suona = new Audio('campo.mp3');
   var className = div.getAttribute("class");
   if (className=="standard") {
     div.className = "steccati";
@@ -170,5 +148,5 @@ function mySwitch(div) {
   else if (className=="edilizia") {
     div.className = "standard";
     }
-  suona.play();
+  audioCampo.play();
 }
