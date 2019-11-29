@@ -3,130 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <!--<meta name="viewport" content="width=800px, user-scalable=no">-->
-    <title>Agricola</title>
+    <title>Animazione</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div
-   class="wrapper">
-  <table id="t00">
-  <tr>
-      <td><div id="legno" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="argilla" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="pietra" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="canna" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="cibo" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-  </tr>
-  <tr><td><div id="grano" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="ortaggio" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="pecora" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="cinghiale" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="bestiame" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-  </tr>
-</table>
-</div>
-<div class="tabellone">
- <table id="t01" style="margin-left:auto; margin-right:auto;">
-    <tr><td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td> 
-    </tr>
-    <tr>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-    </tr>
-    <tr><td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td> 
-    </tr>
-    <tr>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-    </tr>    
-        <tr><td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td> 
-    </tr>
-    <tr>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="spazio" onclick="myfunc2(this)"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-    </tr>
-    <tr><td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td>
-        <td class="largo" onclick="mysel(this)"></td>
-        <td class="stretto"></td> 
-    </tr>
-  </table>
- </div>
- <div class="tastiera">
-   <div class="tasto" onclick="aggiornaRisorsa(-1)">-1</div>
-   <div class="tasto" onclick="aggiornaRisorsa(+1)">+1</div>
-   <div class="tasto" onclick="aggiornaRisorsa(0)">0</div>
-   <div id="bianco" class="tasto">
-     <div id="controllo" class="standard" onclick="mySwitch(this)">.</div>
-   </div>
- </div>
- <div class="carte">
-  <iframe width=1500 height=1500 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFxjjvVvcdzLD3WJdZ2EDfcBGhFbeT7Lz4jT3IYCWqVcvPnWoR0AvvluOHKaJ-fevKrCzUdzk19UuZ/pubhtml?gid=0&amp;single=true&amp;range=a1:c7&amp;widget=false&amp;headers=false&amp;chrome=false"></iframe>
- </div>
- <script src="counter.js"></script>
+  <div class="wrapper">
+      <div id="legno" class="risorsa" onclick="selezionaRisorsa(this)">-</div>
+  </div>
+  <script src="counter.js"></script>
 </body>
 </html>
