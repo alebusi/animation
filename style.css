@@ -2,6 +2,11 @@ body {
     background-color: black;
 }
 
+.palco {
+    width: 100%;
+    heigth: 100%;
+}
+        
 #elemento {
     width: 150px;
     height: 150px;
@@ -11,6 +16,7 @@ body {
     
 .zero {
     background-color: red;
+    animation: mymove 5s infinite;
 }
     
 .uno { 
