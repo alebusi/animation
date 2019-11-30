@@ -8,8 +8,10 @@ body {
 }
         
 #elemento {
-    width: 150px;
-    height: 150px;
+    width: 8vw;
+    height: 8vw;
+    margin-top: 40vh;
+    margin-left: 15vw;
     border-radius: 150px;
     position: relative;
 }
@@ -38,9 +40,7 @@ body {
 }
 
 @keyframes mymove {
-  0%   {top: 0px; left: 0px; background: red;}
-  25%  {top: 0px; left: 100px; background: blue;}
-  50%  {top: 100px; left: 100px; background: yellow;}
-  75%  {top: 100px; left: 0px; background: green;}
-  100% {top: 0px; left: 0px; background: red;}
+  0%   {margin-left: 15vw;}
+  50%  {margin-left: 77vw;}
+  100% {margin-left: 15vw;}
 }
