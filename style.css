@@ -3,12 +3,11 @@ html, body {
     padding: 0;
     height: 100%;
     background: black;
-    overflow: hidden;
 }
 
 .palco {
-    width: 90vw;
-    height: 90vh;
+    width: 95vw;
+    height: 95vh;
     position: fixed;
 }
         
