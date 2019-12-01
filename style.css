@@ -14,27 +14,27 @@ html, body {
 }
         
 #elemento {
-    width: 8vw;
-    height: 8vw;
+    width: 100px;
+    height: 100px;
     margin-top: 40vh;
-    margin-left: 15vw;
-    border-radius: 150px;
+    margin-left: 8vw;
+    border-radius: 100px;
     position: relative;
 }
     
 .zero {
+    margin-left: 8vw;
     background-color: red;
-    animation: mymove 5s infinite;
 }
     
 .uno { 
     background-color: blue;
-    animation: mymove 5s infinite;
+    animation: mymove_oriz 8s infinite;
 }
     
 .due { 
     background-color: orange;
-    animation: mymove 5s infinite;
+    animation: mymove_vert 5s infinite;
 }
 
 .tre { 
@@ -45,8 +45,17 @@ html, body {
     background-color: green;
 }
 
-@keyframes mymove {
-  0%   {margin-left: 15vw;}
-  50%  {margin-left: 77vw;}
-  100% {margin-left: 15vw;}
+@keyframes mymove_oriz {
+  0%   {margin-left: 8vw;}
+  10%  {margin-left: 8vw;}
+  40%  {margin-left: 83vw;}
+  60%  {margin-left: 83vw;}
+  90%  {margin-left: 8vw;}
+  100% {margin-left: 8vw;}
+}
+
+@keyframes mymove_vert {
+  0%   {margin-left: 8vw;}
+  50%  {margin-left: 83vw;}
+  100% {margin-left: 8vw;}
 }
