@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     background: black;
+    overflow: hidden;
 }
 
 .palco {
@@ -15,7 +16,6 @@ html, body {
     width: 100px;
     height: 100px;
     margin-top: 40vh;
-    margin-left: 8vw;
     border-radius: 100px;
     position: relative;
 }
@@ -25,7 +25,7 @@ html, body {
     background-color: red;
 }
     
-.uno { 
+.uno {
     background-color: white;
     animation: mymove_oriz 10s infinite;
 }
