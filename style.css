@@ -15,7 +15,6 @@ html, body {
 #elemento {
     width: 100px;
     height: 100px;
-    margin-top: 40vh;
     border-radius: 100px;
     position: relative;
 }
@@ -30,10 +29,12 @@ html, body {
     
 .zero {
     margin-left: 8vw;
+    margin-top: 40vh;
     background-color: red;
 }
     
 .uno {
+    margin-top: 40vh;
     background-color: white;
     animation: mymove_oriz 10s infinite;
 }
