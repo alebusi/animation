@@ -7,10 +7,10 @@ function cambio() {
   document.getElementById("elemento").className=stati[ind];
   if (document.getElementById("elemento").className=="quattro")
      {
-     document.getElementById("elemento2").className="acceso");
+     document.getElementById("elemento2").className="acceso";
      }
   else
      {
-     document.getElementById("elemento2").className="spento");
+     document.getElementById("elemento2").className="spento";
      }
 }
