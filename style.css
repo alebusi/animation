@@ -6,7 +6,7 @@ html, body {
     overflow: hidden;
 }
 
-.palco {
+.animazione {
     width: 99vw;
     height: 70vh;
     position: fixed;
@@ -28,19 +28,16 @@ html, body {
 .zero {
     margin-left: 8vw;
     margin-top: 40vh;
-    background-color: red;
 }
     
 .uno {
     margin-top: 40vh;
-    background-color: white;
     animation: mymove_oriz 10s infinite;
 }
     
 .due { 
     margin-left: auto;
     margin-right: auto;
-    background-color: orange;
     animation: mymove_vert 10s infinite;
 }
 
@@ -48,7 +45,7 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     animation: mymove_vert 10s infinite;
-    border: solid 10px white;
+    /*border: solid 10px white;*/
 }
 
 .quattro {
