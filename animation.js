@@ -1,6 +1,7 @@
 var stati = ["zero","uno","due","tre","quattro"];
 var colori = ["white","orange","#ff3300","#A1E2FF","#FF7FFF","#00C200"];
-var ind, ind_c = 0;
+var ind = 0;
+var ind_c = 0;
 
 function cambioAnimazione() {
   ind+=1;
