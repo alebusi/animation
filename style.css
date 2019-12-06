@@ -7,9 +7,16 @@ html, body {
 }
 
 .palco {
-    width: 95vw;
-    height: 95vh;
+    width: 99vw;
+    height: 70vh;
     position: fixed;
+}
+
+.colore {
+    position: fixed;
+    width: 99vw;
+    height: 30vh;
+    top: 70vh;
 }
         
 #elemento {
