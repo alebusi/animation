@@ -27,30 +27,59 @@ html, body {
     border-radius: 100px;
 }
 
-.zero {
-    margin-left: 8vw;
-    margin-top: 40vh;
-}
-    
-.uno {
+.orizzontale {
     margin-top: 40vh;
     animation: mymove_oriz 10s infinite;
 }
-    
-.due { 
+
+.orizzontale_bv {
+    left: 45px;
+    top: 10vh;
+    width: 10px;
+    height: 80vh;
+    position: absolute;
+    background-color: white;
+    animation: mymove_oriz 10s infinite;
+}
+
+.orizzontale_bo {
+    margin-left: 8vw;
+    left: 50px;
+    top: 40vh;
+    margin-top: 45px;
+    width: 75vw;
+    height: 10px;
+    position: absolute;
+    background-color: white;
+}
+
+.verticale { 
     margin-left: auto;
     margin-right: auto;
     animation: mymove_vert 10s infinite;
 }
 
-.tre {
-    margin-left: auto;
-    margin-right: auto;
-    animation: mymove_vert 10s infinite;
-    /*border: solid 10px white;*/
+.verticale_bv {
+    width: 10px;
+    height: 80vh;
+    position: absolute;
+    background-color: white;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.quattro {
+.verticale_bo {
+    margin-left: 8vw;
+    left: 50px;
+    top: 45px;
+    width: 75vw;
+    height: 10px;
+    position: absolute;
+    background-color: white;
+    animation: mymove_vert 10s infinite;
+}
+
+.bersaglio {
     margin: 0;
     position: absolute;
     background-color: #FF3300;
@@ -78,7 +107,7 @@ html, body {
   100% {margin-top: 8vh;}
 }
 
-.acceso {
+.bersaglio_zoom {
     width: 70vh;
     height: 70vh;
     border: solid 10px white;
