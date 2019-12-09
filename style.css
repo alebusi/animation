@@ -60,22 +60,28 @@ html, body {
 }
 
 .verticale_bv {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 10px;
     height: 80vh;
-    position: absolute;
     background-color: white;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
 .verticale_bo {
-    margin-left: 8vw;
-    left: 50px;
-    top: 45px;
-    width: 75vw;
-    height: 10px;
+    margin: 0;
+    margin-top: 8vh;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    height: 10px;
     background-color: white;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     animation: mymove_vert 10s infinite;
 }
 
