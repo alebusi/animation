@@ -3,6 +3,7 @@ var colori = ["orange","#ff3300","#A1E2FF","#FF7FFF","#00C200","white"];
 var barra = ["orizzontale_bv","orizzontale_bo","verticale_bo","verticale_bv","bersaglio_zoom"];
 var ind = 0;
 var ind_c = 0;
+var valoreOpacity = 0;
 
 function cambioAnimazione() {
   ind+=1;
@@ -15,4 +16,14 @@ function cambioColore() {
   ind_c+=1;
   if (ind_c > colori.length-1) ind_c=0;
   document.getElementById("elemento").style.backgroundColor = colori[ind_c];
+}
+
+function cambioOpac() {
+  if (valoreOpacity == 0) {
+    valoreOpacity = 1;
+  }
+  else {
+    valoreOpacity = 0;  
+  }
+  document.getElementById("elemento2").style.opacity = valoreOpacity;
 }
