@@ -1,5 +1,5 @@
 var animazioni = ["orizzontale","orizzontale","verticale","verticale","bersaglio"];
-var colori = ["orange","#ff3300","#A1E2FF","#FF7FFF","#00C200","white"];
+var colori = ["orange","#ff3300","#00FFFF","#FF00FF","#00C200","white"];
 var barra = ["orizzontale_bv","orizzontale_bo","verticale_bo","verticale_bv","bersaglio_zoom"];
 var ind = 0;
 var ind_c = 0;
