@@ -15,7 +15,7 @@ html, body {
 
 .colore {
     position: fixed;
-    width: 99vw;
+    width: 70vw;
     height: 30vh;
     top: 70vh;
 }
@@ -26,6 +26,14 @@ html, body {
     position: relative;
     background-color: white;
     border-radius: 100px;
+}
+
+.opac {
+    position: fixed;
+    width: 29vw;
+    height: 30vh;
+    top: 70vh;
+    left:70vw;
 }
 
 .orizzontale {
