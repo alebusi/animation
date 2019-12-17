@@ -41,12 +41,12 @@ html, body {
     height: 100px;
     position: relative;
     background-color: white;
-    border-radius: 100px;
+    /*border-radius: 100px;*/
 }
 
 .orizzontale {
     margin-top: 40vh;
-    animation: mymove_oriz 12s infinite;
+    animation: mymove_oriz 14s infinite;
 }
 
 .orizzontale_bv {
@@ -56,7 +56,7 @@ html, body {
     height: 80vh;
     position: absolute;
     background-color: white;
-    animation: mymove_oriz 12s infinite;
+    animation: mymove_oriz 14s infinite;
 }
 
 .orizzontale_bo {
@@ -73,7 +73,7 @@ html, body {
 .verticale { 
     margin-left: auto;
     margin-right: auto;
-    animation: mymove_vert 12s infinite;
+    animation: mymove_vert 14s infinite;
 }
 
 .verticale_bv {
@@ -98,7 +98,7 @@ html, body {
     background-color: white;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%,-50%);
-    animation: mymove_vert 12s infinite;
+    animation: mymove_vert 14s infinite;
 }
 
 .bersaglio {
