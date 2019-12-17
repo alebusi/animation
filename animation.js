@@ -1,6 +1,6 @@
-var animazioni = ["orizzontale","orizzontale","verticale","verticale","bersaglio"];
+var animazioni = ["orizzontale","orizzontale","verticale","verticale","bersaglio","rettangolo"];
 var colori = ["orange","#ff3300","#00FFFF","#FF00FF","#00C200","white"];
-var barra = ["orizzontale_bv","orizzontale_bo","verticale_bo","verticale_bv","bersaglio_zoom"];
+var barra = ["orizzontale_bv","orizzontale_bo","verticale_bo","verticale_bv","bersaglio_zoom","rettangolo_b"];
 var ind = 0;
 var ind_c = 0;
 var valoreOpacity = 0;
@@ -16,6 +16,15 @@ function cambioColore() {
   ind_c+=1;
   if (ind_c > colori.length-1) ind_c=0;
   document.getElementById("elemento").style.backgroundColor = colori[ind_c];
+}
+
+function cambioForma() {
+ if (document.getElementById("elemento").style.borderRadius == "0px") {
+	 document.getElementById("elemento").style.borderRadius = "100px"; 
+   }
+ else {
+	 document.getElementById("elemento").style.borderRadius = "0px";
+   }
 }
 
 function cambioOpac() {
