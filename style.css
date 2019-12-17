@@ -15,11 +15,27 @@ html, body {
 
 .colore {
     position: fixed;
-    width: 70vw;
+    width: 33vw;
     height: 30vh;
     top: 70vh;
 }
-        
+
+.forma {
+    position: fixed;
+    width: 33vw;
+    height: 30vh;
+    left: 33vw;
+    top: 70vh;
+}
+
+.opac {
+    position: fixed;
+    width: 33vw;
+    height: 30vh;
+    top: 70vh;
+    left:66vw;
+}
+
 #elemento {
     width: 100px;
     height: 100px;
@@ -28,17 +44,9 @@ html, body {
     border-radius: 100px;
 }
 
-.opac {
-    position: fixed;
-    width: 29vw;
-    height: 30vh;
-    top: 70vh;
-    left:70vw;
-}
-
 .orizzontale {
     margin-top: 40vh;
-    animation: mymove_oriz 10s infinite;
+    animation: mymove_oriz 12s infinite;
 }
 
 .orizzontale_bv {
@@ -48,7 +56,7 @@ html, body {
     height: 80vh;
     position: absolute;
     background-color: white;
-    animation: mymove_oriz 10s infinite;
+    animation: mymove_oriz 12s infinite;
 }
 
 .orizzontale_bo {
@@ -65,7 +73,7 @@ html, body {
 .verticale { 
     margin-left: auto;
     margin-right: auto;
-    animation: mymove_vert 10s infinite;
+    animation: mymove_vert 12s infinite;
 }
 
 .verticale_bv {
@@ -90,7 +98,7 @@ html, body {
     background-color: white;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%,-50%);
-    animation: mymove_vert 10s infinite;
+    animation: mymove_vert 12s infinite;
 }
 
 .bersaglio {
@@ -140,4 +148,33 @@ html, body {
   0%   {width: 100px; height: 100px;}
   50%  {width: 70vh; height: 70vh;}
   100% {width: 100px; height: 100px;}
+}
+
+.rettangolo_b {
+    width: 70vw;
+    height: 70vh;
+    border: solid 10px white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.rettangolo {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: mymove_rettangolo 24s infinite;
+}
+
+@keyframes mymove_rettangolo {
+  0%   {left: 20%;}
+  30%  {left: 80%;}
+  50%  {top: 80%;}
+  80%  {left: 20%;}
+  100% {top: 20%;}
 }
