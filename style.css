@@ -183,3 +183,12 @@ html, body {
   80%  {left: 20%;top: 80%;}
   100% {left: 20%;top: 20%;}
 }
+
+.pianeta {
+    position: absolute;
+    background-color: #FF3300;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
