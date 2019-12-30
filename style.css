@@ -45,7 +45,11 @@ html, body {
 }
 
 .orizzontale {
-    margin-top: 40vh;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     animation: mymove_oriz 14s infinite;
 }
 
@@ -71,8 +75,11 @@ html, body {
 }
 
 .verticale { 
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     animation: mymove_vert 14s infinite;
 }
 
@@ -112,21 +119,21 @@ html, body {
 }
 
 @keyframes mymove_oriz {
-  0%   {margin-left: 8vw;}
-  10%  {margin-left: 8vw;}
-  40%  {margin-left: 83vw;}
-  60%  {margin-left: 83vw;}
-  90%  {margin-left: 8vw;}
-  100% {margin-left: 8vw;}
+  0%   {left: 15%;}
+  10%  {left: 15%;}
+  40%  {left: 85%;}
+  60%  {left: 85%;}
+  90%  {left: 15%;}
+  100% {left: 15%;}
 }
 
 @keyframes mymove_vert {
-  0%   {margin-top: 8vh;}
-  10%  {margin-top: 8vh;}
-  40%  {margin-top: 80vh;}
-  60%  {margin-top: 80vh;}
-  90%  {margin-top: 8vh;}
-  100% {margin-top: 8vh;}
+  0%   {top: 15%;}
+  10%  {top: 15%;}
+  40%  {top: 85%;}
+  60%  {top: 85%;}
+  90%  {top: 15%;}
+  100% {top: 15%;}
 }
 
 .bersaglio_zoom {
