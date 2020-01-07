@@ -9,6 +9,7 @@ function testbarraSpaz(e) {
     if (e.keyCode == 32) {
           cambioAnimazione();
     }
+}
 		 
 function cambioAnimazione() {
   ind+=1;
