@@ -5,6 +5,11 @@ var ind = 0;
 var ind_c = 0;
 var valoreOpacity = 0;
 
+function testbarraSpaz(e) {
+    if (e.keyCode == 32) {
+          cambioAnimazione();
+    }
+		 
 function cambioAnimazione() {
   ind+=1;
   if (ind > animazioni.length-1) ind=0;
