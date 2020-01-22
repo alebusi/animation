@@ -5,16 +5,16 @@ var ind = 0;
 var ind_c = 0;
 var valoreOpacity = 0;
 
-document.getElementById("start").onclick = function () { 
-    setInterval(tick, 440); // Kick off the game loop!
-    window.onkeydown = function(e) {
-      newDirection = {37: -1, 38: -2, 39: 1, 40: 2}[e.keyCode] || newDirection; //-2: up, 2: down, -1: left, 1: right
-    };
-	 
 function testbarraSpaz(e) {
-    if (e.keyCode == 32) {
-          cambioAnimazione();
-    }
+  if (e.keyCode == 32) {
+      cambioAnimazione();
+  } else if (e.keyCode == 37) {
+      cambioColore();
+  } else if (e.keyCode == 40) {
+      cambioForma();
+  } else if (e.keyCode == 39) {
+      cambioOpac();
+  }	
 }
 		 
 function cambioAnimazione() {
@@ -48,14 +48,3 @@ function cambioOpac() {
   }
   document.getElementById("elemento2").style.opacity = valoreOpacity;
 }
-	
-function tastoPremuto(e) {
-  if (e.keyCode == 37) {
-      cambioColore();
-  } else if (e.keyCode == 40) {
-      cambioForma();
-  } else if (e.keyCode == 39) {
-      cambioOpac();
-  }
-}	
-	
