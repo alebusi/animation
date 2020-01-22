@@ -5,7 +5,7 @@ var ind = 0;
 var ind_c = 0;
 var valoreOpacity = 0;
 
-function testbarraSpaz(e) {
+function verTastoPremuto(e) {
   if (e.keyCode == 32) {
       cambioAnimazione();
   } else if (e.keyCode == 37) {
