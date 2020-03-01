@@ -31,12 +31,18 @@ function cambioColore() {
 }
 
 function cambioForma() {
- if (document.getElementById("elemento").style.borderRadius == "0px") {
-	 document.getElementById("elemento").style.borderRadius = "100px"; 
-   }
- else {
-	 document.getElementById("elemento").style.borderRadius = "0px";
-   }
+  if (document.getElementById("elemento").style.borderRadius == "0px") {
+	 document.getElementById("elemento").style.borderRadius = "100px";
+  }
+  else {
+         document.getElementById("elemento").style.borderRadius = "0px";
+  }
+  if (document.getElementById("elemento2").style.borderRadius == "0px") {
+	 document.getElementById("elemento2").style.borderRadius = "100px"; 
+  }
+  else {
+	 document.getElementById("elemento2").style.borderRadius = "0px";
+  }	
 }
 
 function cambioOpac() {
