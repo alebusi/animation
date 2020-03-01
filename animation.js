@@ -38,7 +38,7 @@ function cambioForma() {
          document.getElementById("elemento").style.borderRadius = "0px";
   }
   if (document.getElementById("elemento2").style.borderRadius == "0px") {
-	 document.getElementById("elemento2").style.borderRadius = "100px"; 
+	 document.getElementById("elemento2").style.borderRadius = "70vh"; 
   }
   else {
 	 document.getElementById("elemento2").style.borderRadius = "0px";
