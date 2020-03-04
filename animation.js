@@ -37,12 +37,14 @@ function cambioForma() {
   else {
          document.getElementById("elemento").style.borderRadius = "0px";
   }
-  if (document.getElementById("elemento2").style.borderRadius == "0px") {
+  if (document.getElementById("elemento").classname == "bersaglio") {
+      if (document.getElementById("elemento2").style.borderRadius == "0px") {
 	 document.getElementById("elemento2").style.borderRadius = "70vh"; 
-  }
-  else {
+      }
+      else {
 	 document.getElementById("elemento2").style.borderRadius = "0px";
-  }	
+      }
+  }  
 }
 
 function cambioOpac() {
