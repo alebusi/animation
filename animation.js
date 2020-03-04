@@ -38,11 +38,11 @@ function cambioForma() {
          document.getElementById("elemento").style.borderRadius = "0px";
   }
   if (document.getElementById("elemento").classname == "bersaglio") {
-      if (document.getElementById("elemento2").style.borderRadius == "0px") {
-	 document.getElementById("elemento2").style.borderRadius = "70vh"; 
+      if (document.getElementById("elemento").style.borderRadius == "0px") {
+	 document.getElementById("elemento2").style.borderRadius = "0px"; 
       }
       else {
-	 document.getElementById("elemento2").style.borderRadius = "0px";
+	 document.getElementById("elemento2").style.borderRadius = "70vh";
       }
   }  
 }
