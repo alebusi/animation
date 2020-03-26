@@ -167,6 +167,18 @@ html, body {
     transform: translate(-50%, -50%);
 }
 
+.rettangolo_dot {
+    width: 60%;
+    height: 60%;
+    border: dotted 15px white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 .rettangolo {
     position: absolute;
     top: 20%;
