@@ -22,7 +22,7 @@ function cambioAnimazione() {
   if (ind > animazioni.length-1) ind=0;
   document.getElementById("elemento").className=animazioni[ind];
   document.getElementById("elemento2").className=barra[ind];
-  document.getElementById("elemento2").style.borderRadius "0px";
+  document.getElementById("elemento2").style.borderRadius="0px";
 }
 
 function cambioColore() {
