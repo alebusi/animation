@@ -1,6 +1,6 @@
-var animazioni = ["orizzontale","orizzontale","orizzontale","orizzontale","verticale","verticale","verticale","verticale","bersaglio","rettangolo","pianeta"];
+var animazioni = ["orizzontale","orizzontale","orizzontale","orizzontale","verticale","verticale","verticale","verticale","bersaglio","rettangolo","rettangolo","pianeta"];
 var colori = ["orange","#ff3300","#00FFFF","#FF00FF","#00C200","black","white"];
-var barra = ["orizzontale_bv","orizzontale_bo","verticale_bv","rettangolo_b","verticale_bo","verticale_bv","orizzontale_bo","rettangolo_b","bersaglio_zoom","rettangolo_b","satellite"];
+var barra = ["orizzontale_bv","orizzontale_bo","verticale_bv","rettangolo_b","verticale_bo","verticale_bv","orizzontale_bo","rettangolo_b","bersaglio_zoom","rettangolo_b","rettangolo_dot","satellite"];
 var ind = 0;
 var ind_c = 0;
 var valoreOpacity = 0;
@@ -22,6 +22,7 @@ function cambioAnimazione() {
   if (ind > animazioni.length-1) ind=0;
   document.getElementById("elemento").className=animazioni[ind];
   document.getElementById("elemento2").className=barra[ind];
+  document.getElementById("elemento2").style.borderRadius "0px";
 }
 
 function cambioColore() {
