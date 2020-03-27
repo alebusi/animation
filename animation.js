@@ -42,14 +42,6 @@ function cambioForma() {
   }
   else {
      document.getElementById("elemento").style.borderRadius = "0px";
-  }
-  if (document.getElementById("elemento").className == "bersaglio") {
-      if (document.getElementById("elemento").style.borderRadius == "0px") {
-	       document.getElementById("elemento2").style.borderRadius = "0px"; 
-      }
-      else {
-	       document.getElementById("elemento2").style.borderRadius = "70vh";
-      }
   }  
 }
 
