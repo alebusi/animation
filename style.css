@@ -8,7 +8,15 @@ html, body {
 
 .animazione {
     top: 0;
-    width: 99vw;
+    width: 50vw;
+    height: 70vh;
+    position: fixed;
+}
+
+.guida {
+    top: 0;
+    left: 50vw;
+    width: 50vw;
     height: 70vh;
     position: fixed;
 }
@@ -28,7 +36,7 @@ html, body {
     top: 70vh;
 }
 
-.opac {
+.stile {
     position: fixed;
     width: 33vw;
     height: 30vh;
@@ -41,7 +49,6 @@ html, body {
     height: 100px;
     position: relative;
     background-color: white;
-    /*border-radius: 100px;*/
 }
 
 .orizzontale {
@@ -53,18 +60,7 @@ html, body {
     animation: mymove_oriz 14s infinite;
 }
 
-.orizzontale_bv {
-    width: 85vw;
-    height: 200px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    border: solid 10px white;
-}
-
-.orizzontale_bo {
+.orizzontale_b {
     width: 70vw;
     height: 10px;
     position: absolute;
@@ -84,24 +80,13 @@ html, body {
     animation: mymove_vert 14s infinite;
 }
 
-.verticale_bv {
+.verticale_b {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 10px;
     height: 70vh;
     background-color: white;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.verticale_bo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 85vh;
-    border: solid 10px white;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
