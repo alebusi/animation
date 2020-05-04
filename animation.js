@@ -4,7 +4,7 @@ var colori = ["white","orange","#ff3300","#00FFFF","#FF00FF","#00C200","black"];
 var ind_col = 0;
 var barra = ["vuoto","orizzontale_b","verticale_b","rettangolo_b","rettangolo_dot","bersaglio_zoom","satellite"];
 var ind_guida = 0;
-var dimensioni = ["20px","30px","50px","75px","100px"];
+var dimensioni = ["100px","75px","50px","30px"];
 var ind_dim = 0;
 
 function verTastoPremuto(e) {
