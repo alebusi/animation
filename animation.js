@@ -13,9 +13,9 @@ function verTastoPremuto(e) {
   } else if (e.keyCode == 37) {
       cambioColore();
   } else if (e.keyCode == 40) {
-      cambioForma();
+      cambioGuida();
   } else if (e.keyCode == 39) {
-      cambioOpac();
+      cambioStile();
   }	
 }
 		 
@@ -48,8 +48,8 @@ function cambioForma() {
 }
 
 function cambioStile() {
-  if (document.getElementById("elemento").style.backgroundColor != "transparent") {
-    document.getElementById("elemento").style.backgroundColor="transparent";
+  if (document.getElementById("elemento").style.backgroundColor != "black") {
+    document.getElementById("elemento").style.backgroundColor="black";
     document.getElementById("elemento").style.border="solid 12px "+colori[ind_col];
   }
   else {
