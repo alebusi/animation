@@ -210,3 +210,21 @@ html, body {
   80%  {left: 35%;top: 65%;}
   100% {left: 35%;top: 35%;}
 }
+
+.lancetta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 70vh;
+    background-color: white;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: mymove_lancetta 16s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove_lancetta {
+  0%   {transform: translate(-50%, -50%) rotate(0deg);}
+  100% {transform: translate(-50%, -50%) rotate(359deg);}
+}
