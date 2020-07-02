@@ -6,7 +6,7 @@ var barra = ["vuoto","orizzontale_b","verticale_b","rettangolo_b","lancetta","be
 var ind_guida = 0;
 var dimensioni = ["100px","75px","50px","30px"];
 var ind_dim = 0;
-var durata = ["4s","8s","12s","inherit"];
+var durata = ["4s","8s","14s","24s"];
 var ind_dur = 0;
 
 function verTastoPremuto(e) {
