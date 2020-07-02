@@ -6,6 +6,8 @@ var barra = ["vuoto","orizzontale_b","verticale_b","rettangolo_b","lancetta","be
 var ind_guida = 0;
 var dimensioni = ["100px","75px","50px","30px"];
 var ind_dim = 0;
+var durata = ["4s","8s","12s","inherit"];
+var ind_dur = 0;
 
 function verTastoPremuto(e) {
   if (e.keyCode == 32) {
@@ -56,6 +58,12 @@ function cambioStile() {
     document.getElementById("elemento").style.backgroundColor=colori[ind_col];
     document.getElementById("elemento").style.borderWidth="0px";
   }
+}
+
+function cambioDurata() {
+  ind_dur+=1;
+  if (ind_dur > durata.length-1) ind_dur=0;
+  document.getElementById("elemento").style.animationDuration = durata[ind_dur];
 }
 
 function cambioDimensione() {
