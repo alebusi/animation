@@ -21,27 +21,23 @@ html, body {
     position: fixed;
 }
 
-.colore {
+.colore, .forma, .stile, .durata {
     position: fixed;
-    width: 33vw;
+    width: 25vw;
     height: 30vh;
     top: 70vh;
 }
 
 .forma {
-    position: fixed;
-    width: 33vw;
-    height: 30vh;
-    left: 33vw;
-    top: 70vh;
+    left: 25vw;
 }
 
 .stile {
-    position: fixed;
-    width: 33vw;
-    height: 30vh;
-    top: 70vh;
-    left:66vw;
+    left: 50vw;
+}
+
+.durata {
+    left: 75vw;
 }
 
 #elemento {
