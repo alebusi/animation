@@ -7,7 +7,7 @@ var ind_guida = 0;
 var dimensioni = ["100px","75px","50px","30px"];
 var ind_dim = 0;
 var durata = ["4s","8s","14s","24s"];
-var ind_dur = 0;
+var ind_dur = -1;
 
 function verTastoPremuto(e) {
   if (e.keyCode == 32) {
