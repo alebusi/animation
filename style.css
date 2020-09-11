@@ -100,19 +100,13 @@ html, body {
 
 @keyframes mymove_oriz {
   0%   {left: 15%;}
-  10%  {left: 15%;}
-  40%  {left: 85%;}
-  60%  {left: 85%;}
-  90%  {left: 15%;}
+  50%  {left: 85%;}
   100% {left: 15%;}
 }
 
 @keyframes mymove_vert {
   0%   {top: 15%;}
-  10%  {top: 15%;}
-  40%  {top: 85%;}
-  60%  {top: 85%;}
-  90%  {top: 15%;}
+  50%  {top: 85%;}
   100% {top: 15%;}
 }
 
