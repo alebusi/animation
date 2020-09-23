@@ -69,7 +69,7 @@ function cambioDurata() {
 
 function cambioDimensione() {
   ind_dim+=1;
-  if (ind_dim > dimensioni.length-1) ind_dim=0;
+  if (ind_dim > larghezza.length-1) ind_dim=0;
   document.getElementById("elemento").style.width = larghezza[ind_dim];
   document.getElementById("elemento").style.height = altezza[ind_dim];
 }
