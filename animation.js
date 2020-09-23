@@ -4,7 +4,8 @@ var colori = ["white","orange","#ff3300","#00FFFF","#FF00FF","#00C200","black"];
 var ind_col = 0;
 var barra = ["vuoto","orizzontale_b","verticale_b","rettangolo_b","lancetta","bersaglio_zoom","satellite","centro"];
 var ind_guida = 0;
-var dimensioni = ["100px","75px","50px","30px"];
+var larghezza = ["100px","75px","50px","30px","30px","70vw"];
+var altezza = ["100px","75px","50px","30px","70vh","30px"];
 var ind_dim = 0;
 var durata = ["1s","2s","4s","14s","24s"];
 var ind_dur = -1;
@@ -69,6 +70,6 @@ function cambioDurata() {
 function cambioDimensione() {
   ind_dim+=1;
   if (ind_dim > dimensioni.length-1) ind_dim=0;
-  document.getElementById("elemento").style.width = dimensioni[ind_dim];
-  document.getElementById("elemento").style.height = dimensioni[ind_dim];
+  document.getElementById("elemento").style.width = larghezza[ind_dim];
+  document.getElementById("elemento").style.height = altezza[ind_dim];
 }
