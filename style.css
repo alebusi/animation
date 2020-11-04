@@ -228,7 +228,7 @@ html, body {
 }
 
 .croce::after {
-    content: " ";
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -237,8 +237,6 @@ html, body {
     background-color: white;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    animation: mymove_lancetta 16s infinite;
-    animation-timing-function: linear;
 }
 
 @keyframes mymove_lancetta {
