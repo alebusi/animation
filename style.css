@@ -4,6 +4,10 @@ html, body {
     height: 100%;
     background: black;
     overflow: hidden;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    user-select: none; /* Standard syntax */
+
 }
 
 .animazione {
@@ -255,4 +259,12 @@ html, body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+div:hover {
+  animation: mymoveSelection 1s;
+}
+
+@keyframes mymoveSelection {
+  0%   {background-color: white;}
+  100% {background-color: black;}
 }
